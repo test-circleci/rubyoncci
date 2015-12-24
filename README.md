@@ -46,3 +46,25 @@ Troubleshoot:
 
 yhuydk forked and make some change to README
 -> send pull request to test circle ci trigger build or not>>>
+
+-
+here is what happened:
+From github.com:test-circleci/rubyoncci
+* [new ref] refs/pull/8/head -> origin/pull/8 
+
+$ git branch -a
+
+  develop
+* pull/8
+  remotes/origin/HEAD -> origin/develop
+  remotes/origin/develop
+  remotes/origin/master
+  remotes/origin/pull/8 
+
+$git remote -v
+
+origin	git@github.com:test-circleci/rubyoncci.git (fetch)
+origin git@github.com:test-circleci/rubyoncci.git (push) 
+
+- that's all <<< by yhuydk
+
