@@ -43,6 +43,31 @@ checkout:
     - chmod 777 inject.sh
     - ./inject.sh
 
+database:
+  post:
+    - mysql -u root -e "create database mario_ext_test default character set utf8"
+    - mysql -u root -e "create database mario_tmp_test default character set utf8"
+    - |
+      echo 'test:
+        username: ubuntu
+        database: mario_ext_test
+        adapter: mysql2
+        encoding: utf8
+        pool: 5
+        host: localhost
+        socket: /var/run/mysqld/mysqld.sock
+      ' > config/database-external.yml
+    - |
+      echo 'test:
+        username: ubuntu
+        database: mario_tmp_test
+        adapter: mysql2
+        encoding: utf8
+        pool: 5
+        host: localhost
+        socket: /var/run/mysqld/mysqld.sock
+      ' > config/database-tmp.yml
+
 # conduct testing
 # TODO: need to investigate mechanism to 
 #  - (1) pull from cimain

@@ -190,13 +190,13 @@ gem 'mechanize'
 gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
 
 # For SOAP based API (criteo, yahoo_ss, ydn)
-gem 'shampoohat', '0.0.4', git: 'git@github.com:f-scratch/shampoohat.git', tag: 'v0.0.4'
+#gem 'shampoohat', '0.0.4', git: 'git@github.com:f-scratch/shampoohat.git', tag: 'v0.0.4'
 # For Criteo API
-gem 'criteo_api', '0.0.3', git: 'git@github.com:f-scratch/criteo_api.git', tag: 'v0.0.3'
+#gem 'criteo_api', '0.0.3', git: 'git@github.com:f-scratch/criteo_api.git', tag: 'v0.0.3'
 # For Yahoo Sponsored Search API
-gem 'yahoo_ad_api', '0.0.3', git: 'git@github.com:f-scratch/yahoo_ad_api.git', tag: 'v0.0.3'
+#gem 'yahoo_ad_api', '0.0.3', git: 'git@github.com:f-scratch/yahoo_ad_api.git', tag: 'v0.0.3'
 # For Yahoo Display Network(YDN) API
-gem 'ydn_api', '0.0.1', git: 'git@github.com:f-scratch/ydn_api.git', tag: 'v0.0.1'
+#gem 'ydn_api', '0.0.1', git: 'git@github.com:f-scratch/ydn_api.git', tag: 'v0.0.1'
 
 gem 'kaminari'
 
