@@ -7,4 +7,4 @@ ls -lsa
 
 echo $PATH
 
-echo 'no pull from develop, just commit and then send pr'
+date
