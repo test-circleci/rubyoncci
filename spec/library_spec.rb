@@ -15,6 +15,7 @@ describe "Library object" do
     end
 
     @count = 1
+    puts "before:all call"
   end
  
   before :each do
