@@ -6,12 +6,12 @@ general:
       - cibuild
 
 machine:
-  java:
-    version: oraclejdk8
+#  java:
+#    version: oraclejdk8
   ruby:
     version: 2.1.2
 
-#Because we don't read circle.yml until after the checkout phase, 
+#Because circle.yml is not read until the checkout phase,
 #only post is supported in this section.
 checkout:
   pre:
@@ -27,8 +27,8 @@ checkout:
     - pwd
     - git branch -a
     - git remote -v
-    - git config --global user.email "huydk@gmail.com"
-    - git config --global user.name "Huy Nguyen"
+ #   - git config --global user.email "huydk@gmail.com"
+ #   - git config --global user.name "Huy Nguyen"
     - chmod 777 inject.sh
     - ./inject.sh
 
@@ -45,24 +45,22 @@ test:
     - echo 'This is in test:pre'
     - pwd
     - ls -lsa
-
   override:
     - echo 'This is in test:override'
     - rspec spec --format documentation
-
   post:
-    - echo $PATH
+    - echo 'This is in test:post'
     - ls -lsa
     - cat books.yml
     - tree
 
-# once successful build -0> push new code to cimain
+# once successful build -0> push new code to develop
 deployment:
   production:
     branch: cibuild
     commands:
       - echo 'This is in deployment:production'
-      - git push origin cibuild:cimain
+      - git push origin cibuild:develop
 
 # clean up resource
 teardown:

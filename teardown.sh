@@ -7,7 +7,7 @@ ls -lsa
 
 cd ..
 
-rm -rf rubyonci
+rm -rf rubyoncci
 
 pwd
 ls -lsa
