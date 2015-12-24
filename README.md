@@ -7,6 +7,7 @@ Once developers finished their tasks, send a 'Pull request'
 
 Add developer key to github???
 AAA
+huydk added!
 ...
 
 
