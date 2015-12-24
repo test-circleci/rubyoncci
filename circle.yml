@@ -17,10 +17,10 @@ machine:
 
 dependencies:
   post:
-    - sudo apt-get install tree -y
     - npm install bower
     - npm install gulp
     - bower install
+    - sudo apt-get install tree -y
 
 #Because circle.yml is not read until the checkout phase,
 #only post is supported in this section.
