@@ -5,7 +5,8 @@ general:
 #    only:
 #      - cibuild
     ignore:
-      - develop
+      - master
+#      - develop
 #      - devy
 #      - devh
 
