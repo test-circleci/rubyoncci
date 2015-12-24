@@ -13,10 +13,14 @@ describe "Library object" do
     File.open "books.yml", "w" do |f|
       f.write YAML::dump lib_obj
     end
+
+    @count = 1
   end
  
   before :each do
     @lib = Library.new "books.yml"
+    puts "before:each call in #{@count} time"
+    @count += 1
   end
 
   describe "#new" do
