@@ -1,7 +1,9 @@
 require 'spec_helper'
  
 describe "Library object" do
- 
+
+  @count = 1
+
   before :all do
     lib_obj = [
       Book.new("JavaScript: The Good Parts", "Douglas Crockford", :development),
@@ -14,7 +16,6 @@ describe "Library object" do
       f.write YAML::dump lib_obj
     end
 
-    @count = 1
     puts "before:all call"
   end
  

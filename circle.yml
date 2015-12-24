@@ -2,8 +2,12 @@ general:
   artifacts:
     - doc
   branches:
-    only:
-      - cibuild
+#    only:
+#      - cibuild
+    ignore:
+      - develop
+      - devy
+      - devh
 
 machine:
 #  java:
