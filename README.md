@@ -68,3 +68,9 @@ origin git@github.com:test-circleci/rubyoncci.git (push)
 
 - that's all <<< by yhuydk
 
+>>> COMMMENT <<<
+
+Merger could use the result from Circle CI build to decide merge pr or not
+
+All the thing developers should do it make your own unit test run well
+
