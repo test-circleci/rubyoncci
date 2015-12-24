@@ -53,7 +53,7 @@ describe "Library object" do
   end
   
   it "remove an existing books" do
-    js_parttern = @lib.get_book( "JavaScript Patterns") )
+    js_parttern = @lib.get_book( "JavaScript Patterns")
     expect(js_parttern).to be_a Book
   end
 end
