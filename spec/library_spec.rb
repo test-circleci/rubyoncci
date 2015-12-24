@@ -2,8 +2,6 @@ require 'spec_helper'
  
 describe "Library object" do
 
-  @count = 1
-
   before :all do
     lib_obj = [
       Book.new("JavaScript: The Good Parts", "Douglas Crockford", :development),
@@ -15,13 +13,13 @@ describe "Library object" do
     File.open "books.yml", "w" do |f|
       f.write YAML::dump lib_obj
     end
-
+    @count = 1
     puts "before:all called!!!"
   end
  
   before :each do
     @lib = Library.new "books.yml"
-    puts "before:each call in #{@count} time"
+    puts "before:each called in #{@count} time"
     @count += 1
   end
 
@@ -31,12 +29,14 @@ describe "Library object" do
         lib = Library.new
         #lib.should have(0).books
         expect(lib.books.length).to eq(0)
+        puts "'has no books' called in #{@count} time"
       end
     end
     context "with a yaml file parameter" do
       it "has five books" do
         #@lib.should have(5).books
         expect(@lib.books.length).to eq(5)
+        puts "'has five books' called in #{@count} time"
       end
     end
   end
