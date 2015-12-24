@@ -60,6 +60,7 @@ test:
     - ls -lsa
     - cat books.yml
     - tree
+    - bundle exec rubocop
 
 # once successful build -0> push new code to develop
 deployment:
