@@ -16,7 +16,7 @@ describe "Library object" do
       f.write YAML::dump lib_obj
     end
 
-    puts "before:all call"
+    puts "before:all called!!!"
   end
  
   before :each do
