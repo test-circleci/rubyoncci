@@ -7,3 +7,5 @@ ls -lsa
 
 echo $PATH
 
+date
+
