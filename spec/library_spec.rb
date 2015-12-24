@@ -14,7 +14,7 @@ describe "Library object" do
       f.write YAML::dump lib_obj
     end
     @count = 1
-    puts "before:all called!!! -> huydk changed!!!"
+    puts "before:all called!!! -> ..."
   end
  
   before :each do
