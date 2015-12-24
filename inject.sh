@@ -17,8 +17,3 @@ echo $CIRCLE_USERNAME
 
 date
 
-git checkout -b tempobc develop
-git add .
-git add -u
-git commit -m 'tempobc: Save virtual machine before tear down'
-git push origin tempobc
