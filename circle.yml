@@ -6,8 +6,8 @@ general:
 #      - cibuild
     ignore:
       - develop
-      - devy
-      - devh
+#      - devy
+#      - devh
 
 machine:
 #  java:
@@ -64,7 +64,7 @@ deployment:
     branch: cibuild
     commands:
       - echo 'This is in deployment:production'
-      - git push origin cibuild:develop
+#      - git push origin cibuild:develop
 
 # clean up resource
 teardown:

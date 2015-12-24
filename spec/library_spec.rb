@@ -19,8 +19,7 @@ describe "Library object" do
  
   before :each do
     @lib = Library.new "books.yml"
-    puts "before:each called in #{@count} time"
-    @count += 1
+    puts "before:each called!!!"
   end
 
   describe "#new" do
@@ -29,14 +28,12 @@ describe "Library object" do
         lib = Library.new
         #lib.should have(0).books
         expect(lib.books.length).to eq(0)
-        puts "'has no books' called in #{@count} time"
       end
     end
     context "with a yaml file parameter" do
       it "has five books" do
         #@lib.should have(5).books
         expect(@lib.books.length).to eq(5)
-        puts "'has five books' called in #{@count} time"
       end
     end
   end
