@@ -39,11 +39,12 @@ git clone git@github.com:test-circleci/rubyoncci.git
 cd rubyoncci/
 git pull origin develop
 git checkout -b $CIRCLE_BRANCH
-git pull origin $CIRCLE_BRANCH
+git pull origin $CIRCLE_BRANCH > pull_$CIRCLE_BRANCH.txt
 
 status=$?
 if [ $status -ne 0 ]; then
     echo 'FAIL'
+	cat pull_$CIRCLE_BRANCH.txt
     cd ..
     rm -rf testrepo/
     exit $status
