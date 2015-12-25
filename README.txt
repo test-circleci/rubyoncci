@@ -74,3 +74,19 @@ Merger could use the result from Circle CI build to decide merge pr or not
 
 All the thing developers should do it make your own unit test run well
 
+----------------------
+When conflict taking place -> JUST FOR REF
+
+Step 1: From your project repository, bring in the changes and test.
+
+git fetch origin
+git checkout -b <ur_branch> origin/<ur_branch>
+git merge develop
+
+Step 2: Merge the changes and update on GitHub.
+
+git checkout develop
+git merge --no-ff <ur_branch>
+git push origin develop
+
+----------------
