@@ -24,5 +24,7 @@ git config --global user.name "Huy Nguyen"
 	
 git status
 
-git pull origin develop
+#git pull origin develop
+git fetch origin
+git merge develop -m 'Merge develop into '$CIRCLE_BRANCH
 
