@@ -40,7 +40,7 @@ checkout:
     - git remote -v
     - git config --global user.email "huydk@gmail.com"
     - git config --global user.name "Huy Nguyen"
-    - chmod 777 inject.sh
+#    - chmod 777 inject.sh
     - ./inject.sh
 
 # conduct testing
