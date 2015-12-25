@@ -1,10 +1,13 @@
-# rubyoncci >>> huydk: conflict for sure
-huydk >>> Added and changed more change
+# rubyoncci
 Ruby on Circle CI
 
 Mainline is [develop] branch
 Each function will have it own branch created by developer
 Once developers finished their tasks, send a 'Pull request'
+
+2 developers in system:
+ - huydk
+ - yhuydk
 
 To be continue...
 
