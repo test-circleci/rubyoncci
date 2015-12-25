@@ -25,6 +25,29 @@ git config --global user.name "Huy Nguyen"
 git status
 
 #git pull origin develop
-git fetch origin
-git merge develop -m 'Merge develop into '$CIRCLE_BRANCH
-git pull origin develop > dev.null
+#git fetch origin
+#git merge develop -m 'Merge develop into '$CIRCLE_BRANCH
+#git pull origin develop > /dev/null
+
+#
+# NEW WAY
+#
+cd ..
+mkdir testrepo
+cd testrepo/
+git clone git@github.com:test-circleci/rubyoncci.git
+cd rubyoncci/
+git pull origin develop
+git checkout -b $CIRCLE_BRANCH
+git pull origin $CIRCLE_BRANCH
+
+status=$?
+if [ status -eq 0 ]; then
+    echo 'OK'
+else
+    echo 'FAIL'
+	exit (status)
+fi
+
+cd ../rubyoncci/
+
