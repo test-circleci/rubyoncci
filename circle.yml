@@ -33,6 +33,8 @@ checkout:
     - echo 'This is in checkout:override'
     - pwd
     - git status
+    - git branch -a
+    - tree
   post:
     - echo 'This is in checkout:post'
     - pwd
