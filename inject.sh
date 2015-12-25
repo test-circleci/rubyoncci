@@ -20,7 +20,7 @@ date
 # --
 
 git fetch origin
-git pull origin develop -v
+git pull origin develop --ff
 git status
 
 cat inject.sh
