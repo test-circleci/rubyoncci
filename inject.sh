@@ -46,8 +46,10 @@ if [ status -eq 0 ]; then
     echo 'OK'
 else
     echo 'FAIL'
-	exit (status)
+	exit $status
 fi
 
-cd ../rubyoncci/
+cd ..
+rm -rf testrepo/
+cd rubyoncci/
 
