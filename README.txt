@@ -1,4 +1,4 @@
-# rubyoncci >>> huydk: - deleted change this line
+# rubyoncci >>> conflict for sure
 huydk >>> Added and changed more change
 Ruby on Circle CI
 
