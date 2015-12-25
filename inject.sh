@@ -29,6 +29,9 @@ git status
 
 git fetch origin
 git status
+git add .
+git add -u
+git commit -m 'Change the chmode of inject'
 #git merge $CIRCLE_BRANCH -m 'Merge develop into '$CIRCLE_BRANCH
 #git merge develop -m 'Merge develop into '$CIRCLE_BRANCH
 git pull origin develop
