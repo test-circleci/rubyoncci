@@ -1,4 +1,4 @@
-# rubyoncci >>> huydk: - deleted
+# rubyoncci >>> huydk: - deleted change this line
 huydk >>> Added and changed more change
 Ruby on Circle CI
 
