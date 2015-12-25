@@ -17,3 +17,7 @@ echo $CIRCLE_USERNAME
 
 date
 
+# --
+
+git fetch origin
+git merge develop
