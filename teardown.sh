@@ -5,11 +5,11 @@ set -x
 pwd
 ls -lsa
 
-git checkout -b tempobc develop
-git add .
-git add -u
-git commit -m 'tempobc: Save virtual machine before tear down'
-git push origin tempobc
+#git checkout -b tempobc develop
+#git add .
+#git add -u
+#git commit -m 'tempobc: Save virtual machine before tear down'
+#git push origin tempobc
 
 cd ..
 
