@@ -21,7 +21,7 @@ git branch -a
 git remote -v
 git config --global user.email "huydk@gmail.com"
 git config --global user.name "Huy Nguyen"
-	
+    
 git status
 
 #git pull origin develop
@@ -42,14 +42,15 @@ git checkout -b $CIRCLE_BRANCH
 git pull origin $CIRCLE_BRANCH
 
 status=$?
-if [ status -eq 0 ]; then
-    echo 'OK'
-else
+if [ $status -ne 0 ]; then
     echo 'FAIL'
-	exit $status
+    cd ..
+    rm -rf testrepo/
+    exit $status
 fi
 
 cd ..
 rm -rf testrepo/
 cd rubyoncci/
+exit 0
 
