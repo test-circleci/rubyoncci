@@ -7,7 +7,7 @@ Once developers finished their tasks, send a 'Pull request'
 
 2 developers in system:
  - huydk
- - yhuydk -> devh change from local
+ - yhuydk
 
 To be continue...
 
