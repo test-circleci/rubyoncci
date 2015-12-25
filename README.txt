@@ -1,4 +1,4 @@
-# rubyoncci >>> huydk: added to make confict with yhuydk comment
+# rubyoncci >>> huydk: -> yhuydk changed
 Ruby on Circle CI
 
 Mainline is [develop] branch
