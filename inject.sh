@@ -20,7 +20,8 @@ date
 # --
 
 git fetch origin
-git merge develop -m 'Merge develop to $CIRCLE_BRANCH'
+git status
+git merge develop -m 'Merge develop to '$CIRCLE_BRANCH
 git status
 
 cat inject.sh
