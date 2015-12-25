@@ -19,5 +19,5 @@ date
 
 # --
 
-git fetch origin
-git merge develop
+#git fetch origin
+git pull origin develop
