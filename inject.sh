@@ -20,4 +20,4 @@ date
 # --
 
 git fetch origin
-git merge develop
+git pull origin develop
