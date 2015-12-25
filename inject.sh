@@ -27,4 +27,5 @@ git status
 #git pull origin develop
 git fetch origin
 git merge develop -m 'Merge develop into '$CIRCLE_BRANCH
-
+git pull origin develop
+aaa
