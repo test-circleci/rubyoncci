@@ -1,5 +1,5 @@
 # rubyoncci >>> huydk: - deleted
-huydk >>> Added
+huydk >>> Added and changed
 Ruby on Circle CI
 
 Mainline is [develop] branch
