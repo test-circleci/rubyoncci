@@ -19,7 +19,7 @@ date
 
 # --
 
-git fetch origin
+git fetch origin -a
 git merge $CIRCLE_BRANCH --ff -m 'Merge develop into '$CIRCLE_BRANCH
 #git pull origin develop --ff
 git status
