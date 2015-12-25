@@ -50,6 +50,7 @@ if [ $status -ne 0 ]; then
     exit $status
 fi
 
+cat pull_$CIRCLE_BRANCH.txt
 cd ..
 rm -rf testrepo/
 cd rubyoncci/
