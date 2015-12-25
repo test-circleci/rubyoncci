@@ -17,10 +17,10 @@ machine:
 
 dependencies:
   post:
+    - echo 'This is in dependencies:post'
 #    - npm install bower
 #    - npm install gulp
 #    - bower install
-    - sudo apt-get install tree -y
 
 #Because circle.yml is not read until the checkout phase,
 #only post is supported in this section.
@@ -32,8 +32,6 @@ checkout:
   override:
     - echo 'This is in checkout:override'
     - pwd
-    - git status
-    - git branch -a
     - tree
   post:
     - echo 'This is in checkout:post'
@@ -42,9 +40,6 @@ checkout:
     - ./inject.sh
 
 # conduct testing
-# TODO: need to investigate mechanism to 
-#  - (1) pull from cimain
-#  - (2) pull from cibuild
 test:
   pre:
     - echo 'This is in test:pre'
@@ -58,18 +53,16 @@ test:
     - ls -lsa
     - cat books.yml
     - tree
-#    - bundle exec rubocop
 
 # once successful build -0> push new code to develop
-deployment:
-  production:
-    branch: cibuild
-    commands:
-      - echo 'This is in deployment:production'
-#      - git push origin cibuild:develop
+#deployment:
+#  production:
+#    branch: cibuild
+#    commands:
+#      - echo 'This is in deployment:production'
 
 # clean up resource
 teardown:
   post:
-    - chmod 777 teardown.sh
+#    - chmod 777 teardown.sh
     - ./teardown.sh
