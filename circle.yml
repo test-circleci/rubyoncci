@@ -5,15 +5,22 @@ general:
 #    only:
 #      - cibuild
     ignore:
-      - develop
-#      - devy
-#      - devh
+      - master
 
 machine:
 #  java:
 #    version: oraclejdk8
-  ruby:
-    version: 2.1.2
+#  ruby:
+#    version: 2.1.2
+  environment:
+    JDK7_HOME: /usr/lib/jvm/jdk1.7.0
+
+dependencies:
+  post:
+#    - npm install bower
+#    - npm install gulp
+#    - bower install
+    - sudo apt-get install tree -y
 
 #Because circle.yml is not read until the checkout phase,
 #only post is supported in this section.
@@ -31,14 +38,10 @@ checkout:
     - pwd
     - git branch -a
     - git remote -v
- #   - git config --global user.email "huydk@gmail.com"
- #   - git config --global user.name "Huy Nguyen"
+    - git config --global user.email "huydk@gmail.com"
+    - git config --global user.name "Huy Nguyen"
     - chmod 777 inject.sh
     - ./inject.sh
-
-dependencies:
-  post:
-    - sudo apt-get install tree -y
 
 # conduct testing
 # TODO: need to investigate mechanism to 
@@ -57,6 +60,7 @@ test:
     - ls -lsa
     - cat books.yml
     - tree
+#    - bundle exec rubocop
 
 # once successful build -0> push new code to develop
 deployment:
