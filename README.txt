@@ -1,4 +1,4 @@
-# rubyoncci >>> conflict for sure
+# rubyoncci >>> huydk: conflict for sure
 huydk >>> Added and changed more change
 Ruby on Circle CI
 
