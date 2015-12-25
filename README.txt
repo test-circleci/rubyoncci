@@ -6,7 +6,7 @@ Each function will have it own branch created by developer
 Once developers finished their tasks, send a 'Pull request'
 
 2 developers in system:
- - huydk
+ - huydk -> add my command
  - yhuydk -> develop branch change itself
 
 To be continue...
