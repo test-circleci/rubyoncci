@@ -20,7 +20,8 @@ date
 # --
 
 git fetch origin
-git pull origin develop --ff
+git merge develop --ff
+#git pull origin develop --ff
 git status
 
 cat inject.sh
