@@ -2,7 +2,7 @@ yhuydk: added to test case of not pull [develop] but send [pull request]
 
 ------
 
-# rubyoncci
+# rubyoncci >>> yhuydk: added
 Ruby on Circle CI
 
 Mainline is [develop] branch
