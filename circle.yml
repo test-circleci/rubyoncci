@@ -28,7 +28,7 @@ checkout:
   pre:
     - echo 'This is in checkout:pre'
     - pwd
-    - ls -lsa
+    - sudo apt-get install tree -y
   override:
     - echo 'This is in checkout:override'
     - pwd
