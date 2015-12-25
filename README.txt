@@ -1,5 +1,9 @@
 # rubyoncci >>> huydk: - deleted
+<<<<<<< HEAD
+yhuydk >>> added to conflict
+=======
 huydk >>> Added and changed
+>>>>>>> 49a1035ce81e503d921ef0ecab98dc34a922e59b
 Ruby on Circle CI
 
 Mainline is [develop] branch
