@@ -39,7 +39,7 @@ git clone git@github.com:test-circleci/rubyoncci.git
 cd rubyoncci/
 git pull origin develop
 git checkout -b $CIRCLE_BRANCH
-git pull origin $CIRCLE_BRANCH > /dev/null
+git pull origin $CIRCLE_BRANCH
 
 status=$?
 if [ $status -ne 0 ]; then
