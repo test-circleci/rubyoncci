@@ -1,4 +1,4 @@
-# rubyoncci >>> huydk: -> yhuydk changed
+# rubyoncci >>> huydk: - deleted
 Ruby on Circle CI
 
 Mainline is [develop] branch
