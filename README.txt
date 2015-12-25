@@ -1,3 +1,7 @@
+yhuydk: added to test case of not pull [develop] but send [pull request]
+
+------
+
 # rubyoncci
 Ruby on Circle CI
 
