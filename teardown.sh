@@ -13,7 +13,7 @@ ls -lsa
 
 cd ..
 
-rm -rf rubyoncci
+#rm -rf rubyoncci
 
 pwd
 ls -lsa
