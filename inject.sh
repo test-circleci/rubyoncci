@@ -19,5 +19,5 @@ date
 
 # --
 
-#git fetch origin
-git pull origin develop
+git fetch origin
+git merge develop -m 'Merge develop to $CIRCLE_BRANCH'
