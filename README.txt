@@ -1,4 +1,5 @@
 # rubyoncci >>> huydk: - deleted
+yhuydk >>> added to conflict
 Ruby on Circle CI
 
 Mainline is [develop] branch
