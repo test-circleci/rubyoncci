@@ -18,9 +18,10 @@ echo $CIRCLE_USERNAME
 date
 
 # --
-
-git fetch origin -a
-git merge $CIRCLE_BRANCH --ff -m 'Merge develop into '$CIRCLE_BRANCH
+git checkout $CIRCLE_BRANCH
+git pull origin $CIRCLE_BRANCH
+git fetch origin
+git merge $CIRCLE_BRANCH -m 'Merge develop into '$CIRCLE_BRANCH
 #git pull origin develop --ff
 git status
 
