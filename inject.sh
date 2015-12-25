@@ -17,6 +17,11 @@ pwd
 
 date
 
+git branch -a
+git remote -v
+git config --global user.email "huydk@gmail.com"
+git config --global user.name "Huy Nguyen"
+	
 # --
 #git checkout $CIRCLE_BRANCH
 #git pull origin $CIRCLE_BRANCH
