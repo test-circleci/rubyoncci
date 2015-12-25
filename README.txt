@@ -30,15 +30,11 @@ and the repository exists. Action failed: git push origin cibuild:cimain
 Troubleshoot:
 
 1. On CircleCI project > Project Settings > Checkout SSH keys
-
 2. Add key, and then be forwarded to GitHub web site for authorizing
-
 3. Add key
-
 4. Rebuild job
 
 -
-
 
 yhuydk forked and make some change to README
 -> send pull request to test circle ci trigger build or not>>>
