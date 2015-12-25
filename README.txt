@@ -1,4 +1,4 @@
-# rubyoncci >>> huydk: - deleted change this line
+# rubyoncci >>> yhuydk change it and commit to develop
 huydk >>> Added and changed more change
 Ruby on Circle CI
 
