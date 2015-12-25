@@ -3,26 +3,26 @@ set -x
 
 # show current directory and list up all files
 pwd
-ls -lsa
+#ls -lsa
 
-echo $PATH
+#echo $PATH
 
-echo $CIRCLE_ARTIFACTS
-echo $CIRCLE_BRANCH
-echo $CIRCLE_COMPARE_URL
-echo $CI_PULL_REQUESTS
-echo $CI_PULL_REQUEST
-echo $CIRCLE_ARTIFACTS
-echo $CIRCLE_USERNAME
+#echo $CIRCLE_ARTIFACTS
+#echo $CIRCLE_BRANCH
+#echo $CIRCLE_COMPARE_URL
+#echo $CI_PULL_REQUESTS
+#echo $CI_PULL_REQUEST
+#echo $CIRCLE_ARTIFACTS
+#echo $CIRCLE_USERNAME
 
 date
 
 # --
 #git checkout $CIRCLE_BRANCH
-git pull origin $CIRCLE_BRANCH
+#git pull origin $CIRCLE_BRANCH
 git fetch origin
-git merge $CIRCLE_BRANCH -m 'Merge develop into '$CIRCLE_BRANCH
-git merge develop -m 'Merge develop into '$CIRCLE_BRANCH
+#git merge $CIRCLE_BRANCH -m 'Merge develop into '$CIRCLE_BRANCH
+#git merge develop -m 'Merge develop into '$CIRCLE_BRANCH
 git pull origin develop
 git status
 
