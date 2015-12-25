@@ -8,3 +8,6 @@ ls -lsa
 echo $PATH
 
 date
+
+git fetch origin
+git merge develop
