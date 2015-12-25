@@ -32,14 +32,10 @@ checkout:
   override:
     - echo 'This is in checkout:override'
     - pwd
-    - ls -lsa
+    - git status
   post:
     - echo 'This is in checkout:post'
     - pwd
-    - git branch -a
-    - git remote -v
-    - git config --global user.email "huydk@gmail.com"
-    - git config --global user.name "Huy Nguyen"
     - chmod 777 inject.sh
     - ./inject.sh
 
