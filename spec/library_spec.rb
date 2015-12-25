@@ -47,13 +47,13 @@ describe "Library object" do
     expect(@lib.get_book("Designing for the Web")).to be_a Book
   end
  
-  it "saves the library" do
-    books = @lib.books.map { |book| book.title }
-    @lib.save
-    lib2 = Library.new "books.yml"
-    books2 = lib2.books.map { |book| book.title }
-    expect(books).to eql books2
-  end
+  #it "saves the library" do
+  #  books = @lib.books.map { |book| book.title }
+  #  @lib.save
+  #  lib2 = Library.new "books.yml"
+  #  books2 = lib2.books.map { |book| book.title }
+  #  expect(books).to eql books2
+  #end
   
   it "remove an existing books" do
     js_parttern = @lib.get_book( "JavaScript Patterns")
