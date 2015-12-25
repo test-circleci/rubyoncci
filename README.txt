@@ -6,8 +6,8 @@ Each function will have it own branch created by developer
 Once developers finished their tasks, send a 'Pull request'
 
 2 developers in system:
- - abc
- - xyz
+ - huydk
+ - yhuydk
 
 To be continue...
 
