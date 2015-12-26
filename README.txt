@@ -4,6 +4,7 @@ Ruby on Circle CI
 Mainline is [develop] branch
 Each function will have it own branch created by developer
 Once developers finished their tasks, send a 'Pull request'
+This test will try to test whether the branch is mergeable to develop branch
 
 2 developers in system:
  - huydk
@@ -12,8 +13,8 @@ Once developers finished their tasks, send a 'Pull request'
 To be continue...
 
 Problem:
-
-$ git push origin cibuild:cimain
+Can not make push to GitHub in this test machine
+$ git push origin <my_branch>
 
 Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
 
@@ -28,6 +29,8 @@ and the repository exists. Action failed: git push origin cibuild:cimain
 
 -
 Troubleshoot:
+The reason is the virtual test machine is not authorized with GitHub yet
+We just add its key to GitHub or let Circle CI do it for you as below:
 
 1. On CircleCI project > Project Settings > Checkout SSH keys
 2. Add key, and then be forwarded to GitHub web site for authorizing
@@ -36,7 +39,6 @@ Troubleshoot:
 
 -
 
-abc
 yhuydk forked and make some change to README
 -> send pull request to test circle ci trigger build or not>>>
 
@@ -56,7 +58,7 @@ $ git branch -a
 
 $git remote -v
 
-origin	git@github.com:test-circleci/rubyoncci.git (fetch)
+origin git@github.com:test-circleci/rubyoncci.git (fetch)
 origin git@github.com:test-circleci/rubyoncci.git (push) 
 
 - that's all <<< by yhuydk
