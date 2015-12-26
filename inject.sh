@@ -41,7 +41,7 @@ git pull origin develop
 #git checkout -b $CIRCLE_BRANCH
 #git pull origin $CIRCLE_BRANCH
 git fetch origin
-git merge --no-ff origin/$CIRCLE_BRANCH
+git merge --no-ff origin/$CIRCLE_BRANCH -m 'Merge from '$CIRCLE_BRANCH' to develop'
 
 status=$?
 if [ $status -ne 0 ]; then
