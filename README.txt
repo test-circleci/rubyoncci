@@ -8,7 +8,7 @@ Once developers finished their tasks, send a 'Pull request'
 2 developers in system:
  - huydk
  - yhuydk
-
+ - this to target to make conflict - yhuydk
 To be continue...
 
 Problem:
