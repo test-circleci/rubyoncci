@@ -8,7 +8,7 @@ Once developers finished their tasks, send a 'Pull request'
 2 developers in system:
  - huydk
  - yhuydk
-
+ - this row target to change - huydk
 To be continue...
 
 Problem:
