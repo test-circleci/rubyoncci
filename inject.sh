@@ -40,7 +40,7 @@ cd rubyoncci/
 git pull origin develop
 #git checkout -b $CIRCLE_BRANCH
 #git pull origin $CIRCLE_BRANCH
-git fetch $CIRCLE_BRANCH
+git fetch origin
 git merge --no-ff $CIRCLE_BRANCH
 
 status=$?
