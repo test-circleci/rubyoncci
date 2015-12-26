@@ -46,15 +46,11 @@ git merge --no-ff origin/$CIRCLE_BRANCH -m 'Merge from '$CIRCLE_BRANCH' to devel
 status=$?
 if [ $status -ne 0 ]; then
     echo 'FAIL'
-    #cat pull_$CIRCLE_BRANCH.txt
-    cd ..
-    rm -rf testrepo/
-    exit $status
+    git status
 fi
 
-#cat pull_$CIRCLE_BRANCH.txt
 cd ..
 rm -rf testrepo/
 cd rubyoncci/
-exit 0
+exit $status 
 
