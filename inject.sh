@@ -46,7 +46,8 @@ git merge --no-ff origin/$CIRCLE_BRANCH -m 'Merge from '$CIRCLE_BRANCH' to devel
 status=$?
 if [ $status -ne 0 ]; then
     echo 'FAIL'
-    git status
+    #git status
+    git diff --name-only --diff-filter=U
 fi
 
 cd ..
