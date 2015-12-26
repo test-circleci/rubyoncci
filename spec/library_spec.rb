@@ -54,7 +54,7 @@ describe "Library object" do
   #  books2 = lib2.books.map { |book| book.title }
   #  expect(books).to eql books2
   #end
-  
+  # this line target to conflict
   it "remove an existing books" do
     js_parttern = @lib.get_book( "JavaScript Patterns")
     expect(js_parttern).to be_a Book
