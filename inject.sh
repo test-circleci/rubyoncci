@@ -49,7 +49,8 @@ if [ $status -ne 0 ]; then
     #git status
     git diff --name-only --diff-filter=U
 fi
-git status > $CIRCLE_ARTIFACTS/git_status.info
+echo '--- START LOG #'$CIRCLE_BUILD_NUM' ---' >> $CIRCLE_ARTIFACTS/git_status.txt 
+git status >> $CIRCLE_ARTIFACTS/git_status.txt
 cd ..
 rm -rf testrepo/
 cd rubyoncci/
