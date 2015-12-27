@@ -24,11 +24,6 @@ git config --global user.name "Huy Nguyen"
     
 git status
 
-#git pull origin develop
-#git fetch origin
-#git merge develop -m 'Merge develop into '$CIRCLE_BRANCH
-#git pull origin develop > /dev/null
-
 #
 # NEW WAY
 #
@@ -37,20 +32,18 @@ mkdir testrepo
 cd testrepo/
 git clone git@github.com:test-circleci/rubyoncci.git
 cd rubyoncci/
-git pull origin develop
-#git checkout -b $CIRCLE_BRANCH
-#git pull origin $CIRCLE_BRANCH
 git fetch origin
 git merge --no-ff origin/$CIRCLE_BRANCH -m 'Merge from '$CIRCLE_BRANCH' to develop'
 
 status=$?
 if [ $status -ne 0 ]; then
     echo 'FAIL'
-    #git status
     git diff --name-only --diff-filter=U
 fi
+
 echo '--- START LOG #'$CIRCLE_BUILD_NUM' ---' >> $CIRCLE_ARTIFACTS/git_status.txt 
 git status >> $CIRCLE_ARTIFACTS/git_status.txt
+
 cd ..
 rm -rf testrepo/
 cd rubyoncci/
