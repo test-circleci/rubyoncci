@@ -40,7 +40,7 @@ We just add its key to GitHub or let Circle CI do it for you as below:
 -
 
 yhuydk forked and make some change to README
--> send pull request to test circle ci trigger build or not>>>
+-> send pull request to test circle ci trigger build or not>>> triggered -> OK in some way
 
 -
 here is what happened:
