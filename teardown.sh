@@ -7,6 +7,9 @@ ls -lsa
 
 cd ..
 rm -rf rubyoncci
+status = $?
 
 pwd
 ls -lsa
+
+exit $status
