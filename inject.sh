@@ -19,7 +19,7 @@ date
 
 git branch -a
 git remote -v
-git config --global user.email "huydk@gmail.com"
+git config --global user.email "huydontkr@gmail.com"
 git config --global user.name "Huy Nguyen"
     
 git status
