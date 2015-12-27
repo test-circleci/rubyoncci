@@ -49,7 +49,7 @@ if [ $status -ne 0 ]; then
     #git status
     git diff --name-only --diff-filter=U
 fi
-
+git status > $CIRCLE_ARTIFACTS/git_status.info
 cd ..
 rm -rf testrepo/
 cd rubyoncci/
