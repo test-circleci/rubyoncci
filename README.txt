@@ -85,3 +85,38 @@ git merge --no-ff <ur_branch>
 git push origin develop
 
 ----------------
+
+http://stackoverflow.com/questions/17932454/factory-girl-nameerror-unintialized-constant-for-one-of-the-factories
+
+Error when running FactoryGirl, something like:
+
+
+-- 
+Make sure those things are right 
+- proj/app/model/account.rb
+- proj/spec/model/account_spec.rb
+- proj/spec/factories/accounts.rb
+
+--- proj/spec/model/account_spec.rb ---
+require 'rails_helper'
+
+RSpec.describe Account, :type => :model do
+  pending "add some examples to (or delete) #{__FILE__}"
+end
+---
+
+--- proj/spec/factories/accounts.rb ---
+# Read about factories at https://github.com/thoughtbot/factory_girl
+
+FactoryGirl.define do
+  factory :account do
+    name "Nguyen Quang A"
+    type 0
+    addr "91A Saigon, Vietnam"
+  end
+end
+---
+
+-------------
+Good stuff of using FactoryGirl
+https://semaphoreci.com/community/tutorials/working-effectively-with-data-factories-using-factorygirl
