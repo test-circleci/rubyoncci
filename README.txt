@@ -120,3 +120,10 @@ end
 -------------
 Good stuff of using FactoryGirl
 https://semaphoreci.com/community/tutorials/working-effectively-with-data-factories-using-factorygirl
+------------
+
+Runing CircleCI command in background mode (eg: start server)
+    - bundle exec rails s -p 3000:
+        background: true
+------------
+
